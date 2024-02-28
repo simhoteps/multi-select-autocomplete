@@ -1,23 +1,26 @@
 import React from "react";
 import { ICharacterType } from "../types/types";
 import { useGetAlertsQuery } from "../services";
-import { Typography } from "@mui/material";
+import { CircularProgress, Stack, Typography } from "@mui/material";
 import { toImageUrl } from "../utils/helpers/AssetHelpers";
 import CustomAutocomplete from "../components/CustomAutocomplete";
 import { Container, ItemsContainer } from "./components/StyleComponents";
+import ErrorView from "../components/ErrorView";
+import LoadingView from "../components/LoadingView";
 
 const Home = () => {
   const {
     data: characters = {} as ICharacterType,
     isError,
     isLoading,
-    isFetching,
   } = useGetAlertsQuery();
 
   return (
     <Container>
-      {isLoading === true ? (
-        <Typography>Loading..</Typography>
+      {isError === true ? (
+        <ErrorView />
+      ) : isLoading === true ? (
+        <LoadingView />
       ) : (
         <ItemsContainer>
           <img
