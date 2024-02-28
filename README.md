@@ -4,7 +4,7 @@
 # How To Use
 To clone and run this application, you'll need Git, Node.js and npm
 
-#  Live Link
+#Live Link
 You can view the live version of the site:  <a href="https://custommultiselect.netlify.app/">Product Space</a>
 
 ```
