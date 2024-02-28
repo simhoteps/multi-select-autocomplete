@@ -2,7 +2,7 @@
 # Multi Select Autocomplete 
 
 # Live Link
-You can view the live version of the site:  <a href="https://custommultiselect.netlify.app/">Product Space</a>
+You can view the live version of the site:  <a href="https://custommultiselect.netlify.app/">Rick and Morty Multiple Selection </a>
 
 ```
 
